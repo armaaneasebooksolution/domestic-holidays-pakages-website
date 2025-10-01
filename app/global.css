@@ -1,0 +1,170 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+/* Fonts */
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-courgette: "Courgette", cursive;
+  --color-primary: #5c0931;
+  --color-primary-hover: #bc1a6b;
+  --color-primary-light: #fdf2f9;
+  --color-para: #333;
+  --color-title: #000000;
+}
+
+/*  Base body */
+body {
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #f9fafb;
+  color: var(--color-para);
+  line-height: 1.6;
+}
+
+/*  Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
+}
+
+h2 {
+  color: var(--color-title);
+}
+
+button {
+  cursor: pointer;
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(to right, #5c0931, #bc1a6b);
+}
+bg-gradient-to-r from-emerald-400 to-cyan-400 .bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-primary-hover {
+  background-color: var(--color-primary-hover);
+}
+.bg-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+.text-primary-hover {
+  color: var(--color-primary-hover);
+}
+.text-primary-light {
+  color: var(--color-primary-light);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+/* Custom Styling */
+
+/* Mirror shine effects */
+.shine-effect {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  transform: skewX(-20deg);
+  pointer-events: none;
+}
+
+.group:hover .shine-effect {
+  animation: shine 1.2s forwards;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+/* Custom pagination container */
+.discount-offers-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Base bullet styles */
+.custom-bullet {
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease; /* smooth morph */
+}
+
+/* Inactive bullets = gray dot */
+.custom-bullet.inactive {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  opacity: 0.7;
+}
+
+/* Active bullet = bar */
+.custom-bullet.active {
+  width: 44px;
+  height: 8px;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.08);
+  opacity: 1;
+}
+
+/* Loader animation - pure CSS */
+.custom-bullet .bullet-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(to right, #5c0931, #bc1a6b);
+  border-radius: 9999px;
+  box-shadow: 0 0 6px #bc1a6b;
+  width: 0%;
+  animation: fill-progress 3s linear forwards;
+}
+
+@keyframes fill-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Smooth morph with fade */
+.custom-bullet.inactive {
+  transform: scale(0.9);
+}
+.custom-bullet.active {
+  transform: scale(1);
+}
+
+.swiper-initialized {
+  padding-bottom: 10px !important;
+}
