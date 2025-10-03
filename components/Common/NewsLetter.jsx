@@ -14,7 +14,7 @@ export default function Newsletter() {
         <div className="flex justify-center">
           <div className="w-full max-w-2xl text-center">
             {/* Title */}
-            <h3 className="mb-6 text-2xl font-bold text-white md:text-3xl">
+            <h3 className="mb-6 text-2xl font-semibold text-white md:text-3xl">
               Subscribe our newsletter to discount 10% all package.
             </h3>
 

@@ -1,3 +1,4 @@
+import EnquireModal from "@/components/Common/EnquireModal";
 import Footer from "@/components/Common/Footer";
 import Header from "@/components/Common/Header";
 import Newsletter from "@/components/Common/NewsLetter";
@@ -34,6 +35,7 @@ const HomePage = () => {
       <Newsletter />
       <Footer />
       {/* <TopDestinations /> */}
+      <EnquireModal />
     </>
   );
 };

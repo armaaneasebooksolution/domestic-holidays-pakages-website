@@ -2,6 +2,7 @@
 import { Percent, Award, Wallet, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import CommonButton from "../Common/CommonButton";
 
 export default function BestService() {
   // Animation variants
@@ -19,17 +20,17 @@ export default function BestService() {
   };
 
   return (
-    <section className="w-full mb-20">
-      <div className="container mx-auto px-4 bg-white border border-gray-100 shadow-sm rounded-[20px] py-12">
+    <section className="mb-20 w-full">
+      <div className="container mx-auto rounded-[20px] border border-gray-100 bg-white px-4 py-12 shadow-sm">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative flex flex-col items-center mb-10 text-center"
+          className="relative mb-10 flex flex-col items-center text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+          <h2 className="mb-4 text-3xl font-semibold md:text-4xl">
             We’re Providing Best Service Ever!
           </h2>
           <svg
@@ -49,18 +50,18 @@ export default function BestService() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 p-6"
+          className="mb-8 grid grid-cols-1 gap-8 p-6 md:grid-cols-3"
         >
           {/* Local Guidance */}
           <motion.div
             variants={itemVariants}
             className="flex items-start gap-4"
           >
-            <div className="bg-yellow-100 p-4 rounded-full shrink-0">
-              <Award className="w-8 h-8 text-yellow-600" />
+            <div className="shrink-0 rounded-full bg-yellow-100 p-4">
+              <Award className="h-8 w-8 text-yellow-600" />
             </div>
             <div className="text-start">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="mb-2 text-xl font-semibold text-gray-900">
                 Local Guidance
               </h3>
               <p className="text-lg">
@@ -74,11 +75,11 @@ export default function BestService() {
             variants={itemVariants}
             className="flex items-start gap-4"
           >
-            <div className="bg-blue-100 p-4 rounded-full shrink-0">
-              <Percent className="w-8 h-8 text-blue-600" />
+            <div className="shrink-0 rounded-full bg-blue-100 p-4">
+              <Percent className="h-8 w-8 text-blue-600" />
             </div>
             <div className="text-start">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="mb-2 text-xl font-semibold text-gray-900">
                 Deals & Discounts
               </h3>
               <p className="text-lg">
@@ -92,11 +93,11 @@ export default function BestService() {
             variants={itemVariants}
             className="flex items-start gap-4"
           >
-            <div className="bg-yellow-100 p-4 rounded-full shrink-0">
-              <Wallet className="w-8 h-8 text-yellow-600" />
+            <div className="shrink-0 rounded-full bg-yellow-100 p-4">
+              <Wallet className="h-8 w-8 text-yellow-600" />
             </div>
             <div className="text-start">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="mb-2 text-xl font-semibold text-gray-900">
                 Saves Money
               </h3>
               <p className="text-lg">
@@ -115,15 +116,10 @@ export default function BestService() {
           viewport={{ once: true }}
           className="flex justify-center"
         >
-          <Link
-            href="#"
-            className="bg-primary-gradient text-white font-semibold text-sm px-6 py-3 rounded-full shadow-md transition transform hover:scale-105 hover:shadow-lg flex items-center gap-2"
-          >
-            Flat 30% Discounts All Packages
-            <span className="flex items-center gap-1">
-              Check Offer <ArrowUpRight className="w-4 h-4" />
-            </span>
-          </Link>
+          <CommonButton
+            href="/"
+            text="Flat 30% Discounts All Packages   Check Offer "
+          />
         </motion.div>
       </div>
     </section>

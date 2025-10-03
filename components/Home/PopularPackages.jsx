@@ -8,6 +8,8 @@ import {
   CheckCircle,
 } from "lucide-react";
 import SectionHeader from "../Common/SectionHeader";
+import Link from "next/link";
+import CommonButton from "../Common/CommonButton";
 
 const packages = [
   {
@@ -81,7 +83,7 @@ const packages = [
 
 export default function PopularPackages() {
   return (
-    <section className="w-full mb-20">
+    <section className="mb-20 w-full">
       <div className="container mx-auto px-4">
         <SectionHeader
           title="Popular Packages"
@@ -90,56 +92,59 @@ export default function PopularPackages() {
         />
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {packages.map((pkg) => (
             <div
               key={pkg.id}
-              className="bg-white border border-[#e8e8e8] rounded-[20px] overflow-hidden hover:shadow-md transition"
+              className="overflow-hidden rounded-[20px] border border-[#e8e8e8] bg-white transition hover:shadow-md"
             >
               <div className="p-4">
                 {/* Image with Shine */}
-                <div className="relative overflow-hidden rounded-[20px] group">
+                <div className="group relative overflow-hidden rounded-[20px]">
                   <Image
                     src={pkg.img}
                     alt={pkg.title}
                     width={500}
                     height={300}
-                    className="w-full h-56 object-cover rounded-[20px] transition-transform duration-500 group-hover:scale-105"
+                    className="h-56 w-full rounded-[20px] object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   {pkg.hot && (
-                    <span className="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    <span className="absolute top-3 right-3 rounded-full bg-red-500 px-3 py-1 text-xs font-semibold text-white">
                       Hot Sale!
                     </span>
                   )}
                   {/* Shine Effect */}
-                  <div className="absolute inset-0 rounded-[20px] overflow-hidden pointer-events-none">
+                  <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[20px]">
                     <div className="shine-effect"></div>
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-5">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  <h3 className="mb-2 text-lg font-semibold text-gray-900">
                     {pkg.title}
                   </h3>
 
-                  <div className="flex items-center gap-2 text-gray-600 text-sm mb-4">
-                    <MapPin className="w-4 h-4" />
+                  <div className="mb-4 flex items-center gap-2 text-sm text-gray-600">
+                    <MapPin className="h-4 w-4" />
                     <span>{pkg.country}</span>
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="h-4 w-4" />
                     <span>{pkg.days}</span>
                   </div>
 
                   {/* Price + Button */}
-                  <div className="flex items-center justify-between mb-4">
-                    <a
+                  <div className="mb-4 flex items-center justify-between">
+                    <Link
                       href="#"
-                      className="bg-primary-gradient text-white text-sm font-medium px-4 py-2 rounded-lg flex items-center gap-1 transition"
+                      className="group bg-primary-gradient hover:from-primary-light0 hover:ring-primary-light0 relative flex items-center gap-1 overflow-hidden rounded-lg px-4 py-2 text-sm font-medium text-white transition-all duration-300 ease-out hover:bg-gradient-to-r"
                     >
-                      Book Now <ArrowUpRight className="w-4 h-4" />
-                    </a>
+                      {/* Shine effect */}
+                      <span className="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
+                      Book Now
+                      <ArrowUpRight className="h-4 w-4 transform transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1" />
+                    </Link>
                     <span className="text-right text-lg font-bold text-gray-900">
-                      <span className="text-sm font-medium text-gray-500 block">
+                      <span className="block text-sm font-medium text-gray-500">
                         Per Person
                       </span>
                       {pkg.price}
@@ -158,23 +163,23 @@ export default function PopularPackages() {
                   </svg>
 
                   {/* Footer with Individual Tooltips */}
-                  <div className="flex items-center justify-between text-sm text-gray-600 pt-3">
+                  <div className="flex items-center justify-between pt-3 text-sm text-gray-600">
                     {/* Experience Tooltip */}
-                    <div className="relative group/exp">
-                      <span className="flex items-center gap-1 cursor-pointer">
-                        <Info className="w-4 h-4" /> Experience
+                    <div className="group/exp relative">
+                      <span className="flex cursor-pointer items-center gap-1">
+                        <Info className="h-4 w-4" /> Experience
                       </span>
-                      <div className="absolute bottom-full left-0 mb-2 w-64 p-3 rounded-lg bg-gray-900 text-white text-xs opacity-0 group-hover/exp:opacity-100 transition-all duration-300 transform group-hover/exp:-translate-y-1 pointer-events-none shadow-lg">
+                      <div className="pointer-events-none absolute bottom-full left-0 mb-2 w-64 transform rounded-lg bg-gray-900 p-3 text-xs text-white opacity-0 shadow-lg transition-all duration-300 group-hover/exp:-translate-y-1 group-hover/exp:opacity-100">
                         {pkg.experience}
                       </div>
                     </div>
 
                     {/* Inclusion Tooltip */}
-                    <div className="relative group/inc">
-                      <span className="flex items-center gap-1 cursor-pointer">
-                        <CheckCircle className="w-4 h-4" /> Inclusion
+                    <div className="group/inc relative">
+                      <span className="flex cursor-pointer items-center gap-1">
+                        <CheckCircle className="h-4 w-4" /> Inclusion
                       </span>
-                      <div className="absolute bottom-full right-0 mb-2 w-64 p-3 rounded-lg bg-gray-900 text-white text-xs opacity-0 group-hover/inc:opacity-100 transition-all duration-300 transform group-hover/inc:-translate-y-1 pointer-events-none shadow-lg">
+                      <div className="pointer-events-none absolute right-0 bottom-full mb-2 w-64 transform rounded-lg bg-gray-900 p-3 text-xs text-white opacity-0 shadow-lg transition-all duration-300 group-hover/inc:-translate-y-1 group-hover/inc:opacity-100">
                         {pkg.inclusion}
                       </div>
                     </div>
@@ -186,13 +191,8 @@ export default function PopularPackages() {
         </div>
 
         {/* View More Button */}
-        <div className="flex justify-center mt-10">
-          <a
-            href="/packages"
-            className="bg-primary-gradient text-white font-semibold px-6 py-3 rounded-full shadow-md hover:opacity-90 transition"
-          >
-            View More Packages
-          </a>
+        <div className="mt-10 flex justify-center">
+          <CommonButton href="/travel-inspiration" text="View All Packages" />
         </div>
       </div>
     </section>
