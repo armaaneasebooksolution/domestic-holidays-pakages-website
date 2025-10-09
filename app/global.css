@@ -12,7 +12,7 @@
   --color-primary: #5c0931;
   --color-primary-hover: #bc1a6b;
   --color-primary-light: #fdf2f9;
-  --color-para: #333;
+  --color-para: #4a4a4a;
   --color-title: #000000;
 }
 
@@ -47,8 +47,9 @@ button {
 .bg-primary-gradient {
   background: linear-gradient(to right, #5c0931, #bc1a6b);
 }
-bg-gradient-to-r from-emerald-400 to-cyan-400 .bg-primary {
-  background-color: var(--color-primary);
+.hover\:bg-primary-gradient:hover {
+  background: linear-gradient(to right, #5c0931, #bc1a6b);
+  color: #fff;
 }
 .bg-primary-hover {
   background-color: var(--color-primary-hover);

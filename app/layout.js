@@ -1,5 +1,6 @@
 import { Roboto, Poppins, Courgette } from "next/font/google";
 import "./global.css";
+import { ReduxProvider } from "@/redux/provider";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -25,7 +26,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${roboto.variable} ${poppins.variable} ${courgette.variable} antialiased`}
       >
-        {children}
+        <ReduxProvider> {children}</ReduxProvider>
       </body>
     </html>
   );

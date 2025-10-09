@@ -1,23 +1,19 @@
 import Footer from "@/components/Common/Footer";
 import Header from "@/components/Common/Header";
-import Newsletter from "@/components/Common/NewsLetter";
 import LastMinuteDeals from "@/components/Home/LastMinuteDeals";
-import PackagesBanner from "@/components/Packages/PackagesBanner";
-import ResultGrid from "@/components/Packages/ResultGrid";
+import Details from "@/components/PackagesDetails/Details";
 
-const Packages = () => {
+const PackagesDetailsPage = () => {
   return (
     <>
       <Header />
-      <PackagesBanner />
-      <ResultGrid />
+      <Details />
       <div className="mt-10">
         <LastMinuteDeals />
       </div>
-      <Newsletter />
       <Footer />
     </>
   );
 };
 
-export default Packages;
+export default PackagesDetailsPage;
