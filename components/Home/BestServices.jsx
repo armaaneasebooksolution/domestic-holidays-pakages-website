@@ -21,7 +21,7 @@ export default function BestService() {
 
   return (
     <section className="mb-20 w-full">
-      <div className="container mx-auto rounded-[20px] border border-gray-100 bg-white px-4 py-12 shadow-sm">
+      <div className="container mx-auto rounded-[20px] border border-gray-100 bg-white px-4 py-12 shadow-sm transition hover:shadow-md">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

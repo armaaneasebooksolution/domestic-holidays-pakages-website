@@ -12,7 +12,6 @@ import "swiper/css/navigation";
 import SectionHeader from "../Common/SectionHeader";
 import CommonButton from "../Common/CommonButton";
 
-// ✅ India-focused Inspirations
 const inspirations = [
   {
     id: 1,

@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  destinations: { currentPage: 1, itemsPerPage: 8 },
+  destinations: { currentPage: 1, itemsPerPage: 10 },
+  blogs: { currentPage: 1, itemsPerPage: 10 },
   packages: { currentPage: 1, itemsPerPage: 8 },
 };
 
@@ -12,7 +13,7 @@ const paginationSlice = createSlice({
     setPage: (state, action) => {
       const { section, page } = action.payload;
       if (state[section]) {
-        state[section].currentPage = page; //  use page, not static number
+        state[section].currentPage = page;
       }
     },
     resetPage: (state, action) => {
