@@ -8,15 +8,7 @@ import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
-const images = [
-  "/assets/img/innerpages/destination-details-gallery-img1.jpg",
-  "/assets/img/innerpages/destination-details-gallery-img2.jpg",
-  "/assets/img/innerpages/destination-details-gallery-img3.jpg",
-  "/assets/img/innerpages/destination-details-gallery-img4.jpg",
-  "/assets/img/innerpages/destination-details-gallery-img5.jpg",
-];
-
-export default function DestinationSlider() {
+export default function DestinationSlider({ images = [] }) {
   const swiperRef = useRef(null);
 
   return (
@@ -26,14 +18,15 @@ export default function DestinationSlider() {
         modules={[Navigation]}
         loop={true}
         spaceBetween={25}
-        slidesPerView={3} // ✅ show 3 slides at once
+        slidesPerView={3}
+        centeredSlides={false}
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
         }}
         breakpoints={{
-          0: { slidesPerView: 1 }, // mobile
-          640: { slidesPerView: 2 }, // tablets
-          1024: { slidesPerView: 3 }, // desktop
+          0: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
         }}
         className="rounded-2xl"
       >
@@ -47,6 +40,11 @@ export default function DestinationSlider() {
                 height={600}
                 className="h-[400px] w-full rounded-2xl object-cover transition-transform duration-700 ease-in-out hover:scale-105"
               />
+
+              {/* Shine Effect (optional aesthetic touch) */}
+              <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-2xl">
+                <div className="shine-effect" />
+              </div>
             </div>
           </SwiperSlide>
         ))}
@@ -55,14 +53,16 @@ export default function DestinationSlider() {
       {/* ===== Custom Navigation Buttons ===== */}
       <button
         onClick={() => swiperRef.current?.slidePrev()}
-        className="absolute top-1/2 left-2 z-20 -translate-y-1/2 rounded-full bg-gray-800/40 p-2 text-white transition hover:bg-gray-800"
+        className="absolute top-1/2 left-6 z-20 -translate-y-1/2 rounded-full bg-gray-800/40 p-3 text-white transition hover:bg-gray-800 md:left-10"
+        aria-label="Previous slide"
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
 
       <button
         onClick={() => swiperRef.current?.slideNext()}
-        className="absolute top-1/2 right-2 z-20 -translate-y-1/2 rounded-full bg-gray-800/40 p-2 text-white transition hover:bg-gray-800"
+        className="absolute top-1/2 right-6 z-20 -translate-y-1/2 rounded-full bg-gray-800/40 p-3 text-white transition hover:bg-gray-800 md:right-10"
+        aria-label="Next slide"
       >
         <ChevronRight className="h-6 w-6" />
       </button>

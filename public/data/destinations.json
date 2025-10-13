@@ -1,0 +1,544 @@
+[
+  {
+    "id": 1,
+    "slug": "delhi",
+    "name": "Delhi",
+    "tours": 22,
+    "capital": "New Delhi",
+    "language": "Hindi, English",
+    "about": "Delhi, India's capital territory, is a massive metropolitan area in the country's north. It's a city with a rich history dating back to ancient times, featuring historic monuments, bustling markets, and diverse culture.",
+    "images": [
+      "/assets/img/home1/destination-img1.jpg",
+      "/assets/img/home1/destination-img2.jpg",
+      "/assets/img/home1/destination-img3.jpg",
+      "/assets/img/home1/destination-img4.jpg"
+    ],
+    "bestTimeToVisit": [
+      {
+        "season": "Winter",
+        "months": "October - March",
+        "temperature": "8°C - 25°C / 46°F - 77°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Summer",
+        "months": "April - June",
+        "temperature": "25°C - 45°C / 77°F - 113°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Monsoon",
+        "months": "July - September",
+        "temperature": "28°C - 35°C / 82°F - 95°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      }
+    ],
+    "highlights": [
+      "Red Fort",
+      "India Gate",
+      "Qutub Minar",
+      "Lotus Temple"
+    ],
+    "popularPlaces": [
+      {
+        "name": "Red Fort",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example1"
+      },
+      {
+        "name": "India Gate",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example2"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "mumbai",
+    "name": "Mumbai",
+    "tours": 20,
+    "capital": "Mumbai",
+    "language": "Marathi, Hindi, English",
+    "about": "Mumbai, the financial capital of India, is a bustling metropolis known for its Bollywood film industry, colonial architecture, and vibrant street life. It's a city that never sleeps.",
+    "images": [
+      "/assets/img/home1/destination-img1.jpg",
+      "/assets/img/home1/destination-img2.jpg",
+      "/assets/img/home1/destination-img3.jpg",
+      "/assets/img/home1/destination-img4.jpg"
+    ],
+    "bestTimeToVisit": [
+      {
+        "season": "Winter",
+        "months": "November - February",
+        "temperature": "18°C - 30°C / 64°F - 86°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Summer",
+        "months": "March - May",
+        "temperature": "25°C - 35°C / 77°F - 95°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Monsoon",
+        "months": "June - October",
+        "temperature": "24°C - 32°C / 75°F - 90°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      }
+    ],
+    "highlights": [
+      "Gateway of India",
+      "Marine Drive",
+      "Elephanta Caves",
+      "Juhu Beach"
+    ],
+    "popularPlaces": [
+      {
+        "name": "Gateway of India",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example3"
+      },
+      {
+        "name": "Marine Drive",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example4"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "jaipur",
+    "name": "Jaipur",
+    "tours": 15,
+    "capital": "Jaipur",
+    "language": "Hindi, Rajasthani",
+    "about": "Jaipur, the Pink City, is the capital of Rajasthan known for its stunning palaces, forts, and vibrant markets. It's part of the Golden Triangle tourist circuit.",
+    "images": [
+      "/assets/img/home1/destination-img1.jpg",
+      "/assets/img/home1/destination-img2.jpg",
+      "/assets/img/home1/destination-img3.jpg",
+      "/assets/img/home1/destination-img4.jpg"
+    ],
+    "bestTimeToVisit": [
+      {
+        "season": "Winter",
+        "months": "October - March",
+        "temperature": "10°C - 27°C / 50°F - 81°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Summer",
+        "months": "April - June",
+        "temperature": "25°C - 45°C / 77°F - 113°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Monsoon",
+        "months": "July - September",
+        "temperature": "25°C - 35°C / 77°F - 95°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      }
+    ],
+    "highlights": [
+      "Amber Fort",
+      "Hawa Mahal",
+      "City Palace",
+      "Jantar Mantar"
+    ],
+    "popularPlaces": [
+      {
+        "name": "Amber Fort",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example5"
+      },
+      {
+        "name": "Hawa Mahal",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example6"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "goa",
+    "name": "Goa",
+    "tours": 25,
+    "capital": "Panaji",
+    "language": "Konkani, English",
+    "about": "Goa is India's smallest state known for its stunning beaches, Portuguese heritage, beautiful churches, and vibrant nightlife. It's a popular tourist destination for both domestic and international travelers.",
+    "images": [
+      "/assets/img/home1/destination-img1.jpg",
+      "/assets/img/home1/destination-img2.jpg",
+      "/assets/img/home1/destination-img3.jpg",
+      "/assets/img/home1/destination-img4.jpg"
+    ],
+    "bestTimeToVisit": [
+      {
+        "season": "Winter",
+        "months": "November - February",
+        "temperature": "20°C - 32°C / 68°F - 90°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Summer",
+        "months": "March - May",
+        "temperature": "25°C - 35°C / 77°F - 95°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Monsoon",
+        "months": "June - October",
+        "temperature": "24°C - 30°C / 75°F - 86°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      }
+    ],
+    "highlights": [
+      "Calangute Beach",
+      "Basilica of Bom Jesus",
+      "Dudhsagar Falls",
+      "Fort Aguada"
+    ],
+    "popularPlaces": [
+      {
+        "name": "Calangute Beach",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example7"
+      },
+      {
+        "name": "Basilica of Bom Jesus",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example8"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "kerala",
+    "name": "Kerala",
+    "tours": 18,
+    "capital": "Thiruvananthapuram",
+    "language": "Malayalam, English",
+    "about": "Kerala, known as 'God's Own Country', is famous for its serene backwaters, lush green landscapes, Ayurvedic treatments, and rich cultural heritage. It's a tropical paradise in southern India.",
+    "images": [
+      "/assets/img/home1/destination-img1.jpg",
+      "/assets/img/home1/destination-img2.jpg",
+      "/assets/img/home1/destination-img3.jpg",
+      "/assets/img/home1/destination-img4.jpg"
+    ],
+    "bestTimeToVisit": [
+      {
+        "season": "Winter",
+        "months": "September - March",
+        "temperature": "22°C - 32°C / 72°F - 90°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Summer",
+        "months": "April - May",
+        "temperature": "24°C - 33°C / 75°F - 91°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Monsoon",
+        "months": "June - August",
+        "temperature": "23°C - 29°C / 73°F - 84°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      }
+    ],
+    "highlights": [
+      "Backwaters of Alleppey",
+      "Munnar Tea Gardens",
+      "Kovalam Beach",
+      "Periyar Wildlife Sanctuary"
+    ],
+    "popularPlaces": [
+      {
+        "name": "Alleppey Backwaters",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example9"
+      },
+      {
+        "name": "Munnar Hills",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example10"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "varanasi",
+    "name": "Varanasi",
+    "tours": 12,
+    "capital": "Varanasi",
+    "language": "Hindi, Bhojpuri",
+    "about": "Varanasi, one of the world's oldest living cities, is a major religious hub in India. Situated on the banks of the Ganges River, it's considered the spiritual capital of India.",
+    "images": [
+      "/assets/img/home1/destination-img1.jpg",
+      "/assets/img/home1/destination-img2.jpg",
+      "/assets/img/home1/destination-img3.jpg",
+      "/assets/img/home1/destination-img4.jpg"
+    ],
+    "bestTimeToVisit": [
+      {
+        "season": "Winter",
+        "months": "October - March",
+        "temperature": "10°C - 25°C / 50°F - 77°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Summer",
+        "months": "April - June",
+        "temperature": "25°C - 45°C / 77°F - 113°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Monsoon",
+        "months": "July - September",
+        "temperature": "25°C - 35°C / 77°F - 95°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      }
+    ],
+    "highlights": [
+      "Ganga Aarti",
+      "Kashi Vishwanath Temple",
+      "Sarnath",
+      "Dashashwamedh Ghat"
+    ],
+    "popularPlaces": [
+      {
+        "name": "Ganga Ghats",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example11"
+      },
+      {
+        "name": "Kashi Temple",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example12"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "agra",
+    "name": "Agra",
+    "tours": 14,
+    "capital": "Agra",
+    "language": "Hindi, Urdu",
+    "about": "Agra is home to the iconic Taj Mahal, one of the Seven Wonders of the World. This historic city in Uttar Pradesh showcases magnificent Mughal architecture and rich cultural heritage.",
+    "images": [
+      "/assets/img/home1/destination-img1.jpg",
+      "/assets/img/home1/destination-img2.jpg",
+      "/assets/img/home1/destination-img3.jpg",
+      "/assets/img/home1/destination-img4.jpg"
+    ],
+    "bestTimeToVisit": [
+      {
+        "season": "Winter",
+        "months": "October - March",
+        "temperature": "8°C - 25°C / 46°F - 77°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Summer",
+        "months": "April - June",
+        "temperature": "25°C - 45°C / 77°F - 113°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Monsoon",
+        "months": "July - September",
+        "temperature": "25°C - 35°C / 77°F - 95°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      }
+    ],
+    "highlights": [
+      "Taj Mahal",
+      "Agra Fort",
+      "Fatehpur Sikri",
+      "Itmad-ud-Daulah's Tomb"
+    ],
+    "popularPlaces": [
+      {
+        "name": "Taj Mahal",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example13"
+      },
+      {
+        "name": "Agra Fort",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example14"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "kashmir",
+    "name": "Kashmir",
+    "tours": 16,
+    "capital": "Srinagar",
+    "language": "Kashmiri, Urdu, Hindi",
+    "about": "Kashmir, often called 'Paradise on Earth', is renowned for its breathtaking landscapes, serene Dal Lake, beautiful gardens, and snow-capped mountains. It's a perfect destination for nature lovers.",
+    "images": [
+      "/assets/img/home1/destination-img1.jpg",
+      "/assets/img/home1/destination-img2.jpg",
+      "/assets/img/home1/destination-img3.jpg",
+      "/assets/img/home1/destination-img4.jpg"
+    ],
+    "bestTimeToVisit": [
+      {
+        "season": "Spring",
+        "months": "March - May",
+        "temperature": "10°C - 20°C / 50°F - 68°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Summer",
+        "months": "June - August",
+        "temperature": "15°C - 30°C / 59°F - 86°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Autumn",
+        "months": "September - November",
+        "temperature": "10°C - 23°C / 50°F - 73°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Winter",
+        "months": "December - February",
+        "temperature": "-2°C - 15°C / 28°F - 59°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      }
+    ],
+    "highlights": [
+      "Dal Lake",
+      "Gulmarg",
+      "Pahalgam",
+      "Mughal Gardens"
+    ],
+    "popularPlaces": [
+      {
+        "name": "Dal Lake",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example15"
+      },
+      {
+        "name": "Gulmarg",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example16"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "rajasthan",
+    "name": "Rajasthan",
+    "tours": 20,
+    "capital": "Jaipur",
+    "language": "Hindi, Rajasthani",
+    "about": "Rajasthan, the Land of Kings, is known for its royal palaces, majestic forts, vast deserts, and vibrant culture. It offers a glimpse into India's royal heritage and traditional lifestyle.",
+    "images": [
+      "/assets/img/home1/destination-img1.jpg",
+      "/assets/img/home1/destination-img2.jpg",
+      "/assets/img/home1/destination-img3.jpg",
+      "/assets/img/home1/destination-img4.jpg"
+    ],
+    "bestTimeToVisit": [
+      {
+        "season": "Winter",
+        "months": "October - March",
+        "temperature": "10°C - 27°C / 50°F - 81°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Summer",
+        "months": "April - June",
+        "temperature": "25°C - 45°C / 77°F - 113°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Monsoon",
+        "months": "July - September",
+        "temperature": "25°C - 35°C / 77°F - 95°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      }
+    ],
+    "highlights": [
+      "Udaipur City Palace",
+      "Jaisalmer Fort",
+      "Thar Desert",
+      "Ranthambore National Park"
+    ],
+    "popularPlaces": [
+      {
+        "name": "Udaipur Palace",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example17"
+      },
+      {
+        "name": "Jaisalmer Fort",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example18"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "darjeeling",
+    "name": "Darjeeling",
+    "tours": 10,
+    "capital": "Darjeeling",
+    "language": "Nepali, Hindi, English",
+    "about": "Darjeeling, nestled in the Himalayas, is famous for its tea plantations, stunning mountain views of Kanchenjunga, and the UNESCO World Heritage Darjeeling Himalayan Railway.",
+    "images": [
+      "/assets/img/home1/destination-img1.jpg",
+      "/assets/img/home1/destination-img2.jpg",
+      "/assets/img/home1/destination-img3.jpg",
+      "/assets/img/home1/destination-img4.jpg"
+    ],
+    "bestTimeToVisit": [
+      {
+        "season": "Spring",
+        "months": "March - May",
+        "temperature": "8°C - 18°C / 46°F - 64°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Summer",
+        "months": "June - August",
+        "temperature": "12°C - 20°C / 54°F - 68°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Autumn",
+        "months": "September - November",
+        "temperature": "8°C - 16°C / 46°F - 61°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      },
+      {
+        "season": "Winter",
+        "months": "December - February",
+        "temperature": "2°C - 10°C / 36°F - 50°F",
+        "image": "/assets/img/home1/destination-img4.jpg"
+      }
+    ],
+    "highlights": [
+      "Tiger Hill Sunrise",
+      "Darjeeling Tea Gardens",
+      "Batasia Loop",
+      "Darjeeling Himalayan Railway"
+    ],
+    "popularPlaces": [
+      {
+        "name": "Tiger Hill",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example19"
+      },
+      {
+        "name": "Tea Gardens",
+        "image": "/assets/img/home1/destination-img1.jpg",
+        "googleLink": "https://goo.gl/maps/example20"
+      }
+    ]
+  }
+]

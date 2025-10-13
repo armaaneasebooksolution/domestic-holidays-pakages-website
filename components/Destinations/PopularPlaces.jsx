@@ -7,23 +7,22 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
-const destinations = [
-  { id: 1, src: "/assets/img/home1/destination-img1.jpg", alt: "Goa" },
-  { id: 2, src: "/assets/img/home1/destination-img2.jpg", alt: "Delhi" },
-  { id: 3, src: "/assets/img/home1/destination-img3.jpg", alt: "Jaipur" },
-  { id: 4, src: "/assets/img/home1/destination-img4.jpg", alt: "Agra" },
-  { id: 5, src: "/assets/img/home1/destination-img5.jpg", alt: "Kerala" },
-  { id: 6, src: "/assets/img/home1/destination-img6.jpg", alt: "Mumbai" },
-];
-
-export default function PopularPlaces() {
+export default function PopularPlaces({ destination }) {
   const swiperRef = useRef(null);
 
+  // ✅ Use real dynamic data
+  const popularPlaces = destination?.popularPlaces || [];
+
+  // ✅ Animation variants
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
   };
+
+  // ✅ If no data, don't render this section
+  if (!popularPlaces.length) return null;
 
   return (
     <section className="relative mb-20 w-full">
@@ -31,7 +30,7 @@ export default function PopularPlaces() {
         {/* ===== Header Row: Title + Nav Arrows ===== */}
         <div className="mb-4 flex flex-wrap items-center justify-between gap-4">
           <h2 className="text-left text-[20px] font-semibold tracking-wide sm:text-[22px] lg:text-[24px]">
-            Popular Tourist Places
+            Popular Places to Visit in {destination.name}
           </h2>
 
           {/* Navigation Arrows beside Title */}
@@ -90,12 +89,12 @@ export default function PopularPlaces() {
             }}
             breakpoints={{
               640: { slidesPerView: 2 },
-              1024: { slidesPerView: 6 },
+              1024: { slidesPerView: 4 },
             }}
             className="destination-swiper"
           >
-            {destinations.map((offer) => (
-              <SwiperSlide key={offer.id}>
+            {popularPlaces.map((place, index) => (
+              <SwiperSlide key={index}>
                 <motion.div
                   variants={itemVariants}
                   initial="hidden"
@@ -103,14 +102,14 @@ export default function PopularPlaces() {
                   viewport={{ once: true }}
                   className="group relative overflow-hidden rounded-2xl transition-transform duration-500 hover:scale-[1.02]"
                 >
-                  {/* Image with Shine Effect */}
+                  {/* ===== Image with Shine Effect ===== */}
                   <div className="relative overflow-hidden rounded-2xl">
                     <Image
-                      src={offer.src}
-                      alt={offer.alt}
+                      src={place.image}
+                      alt={place.name}
                       width={800}
                       height={400}
-                      className="h-[160px] w-full rounded-2xl object-cover"
+                      className="h-[180px] w-full rounded-2xl object-cover"
                     />
 
                     {/* Shine Effect */}
@@ -119,11 +118,21 @@ export default function PopularPlaces() {
                     </div>
                   </div>
 
-                  {/* Title */}
-                  <div className="text-center">
-                    <h3 className="mt-2 text-sm font-semibold drop-shadow-md">
-                      {offer.alt}
+                  {/* ===== Title & Map Link ===== */}
+                  <div className="mt-2 text-center">
+                    <h3 className="text-sm font-semibold text-gray-900 drop-shadow-md">
+                      {place.name}
                     </h3>
+                    {place.googleLink && (
+                      <Link
+                        href={place.googleLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary text-xs hover:underline"
+                      >
+                        View on Map →
+                      </Link>
+                    )}
                   </div>
                 </motion.div>
               </SwiperSlide>
