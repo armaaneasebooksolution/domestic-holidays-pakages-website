@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   destinations: { currentPage: 1, itemsPerPage: 10 },
-  blogs: { currentPage: 1, itemsPerPage: 10 },
+  blogs: { currentPage: 1, itemsPerPage: 4 },
   packages: { currentPage: 1, itemsPerPage: 8 },
 };
 

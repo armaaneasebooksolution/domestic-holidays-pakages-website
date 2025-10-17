@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "slug": "exploring-paris-7-day-guide-2025",
+    "title": "The Ultimate 7-Day Guide to Exploring Paris in 2025",
+    "author": "Armaan Ahmad",
+    "location": "Paris, France",
+    "date": "2025-01-02",
+    "image": "/assets/img/home1/blog-img1.jpg",
+    "excerpt": "Discover how to explore Paris like a local in 7 days — from romantic river walks to hidden art treasures and shopping at Le Marais.",
+    "content": {
+      "intro": [
+        "Paris, often celebrated as the 'City of Light', is more than just a destination — it’s an experience that blends art, romance, history, and elegance in perfect harmony. From the cobblestone streets of Montmartre to the grandeur of the Louvre, Paris stands as a timeless symbol of sophistication and culture.",
+        "This 7-day itinerary for 2025 helps you uncover the true essence of Paris in the most immersive way possible — covering where to go, what to eat, and local secrets even Parisians cherish."
+      ],
+      "sections": [
+        {
+          "heading": "Day 1: Arrival and Evening by the Seine",
+          "paragraphs": [
+            "Upon arrival at Charles de Gaulle Airport, take a taxi or RER B train to reach central Paris. If you’re staying near the Champs-Élysées or the 7th arrondissement, you’ll be perfectly positioned for sightseeing.",
+            "Once settled, step out for a serene walk along the Seine River and enjoy your first views of the illuminated Eiffel Tower shimmering across the night sky."
+          ],
+          "list": [
+            "Check in at a boutique hotel like Hotel Raphael or Le Meurice.",
+            "Take an evening river cruise with dinner and live music.",
+            "Enjoy dessert at a local patisserie near Trocadéro."
+          ],
+          "image": {
+            "src": "/assets/img/home1/destination-img1.jpg",
+            "caption": "The Eiffel Tower shimmering at twilight — an unmissable Parisian moment."
+          }
+        },
+        {
+          "heading": "Day 2: The Iconic Landmarks of Paris",
+          "paragraphs": [
+            "Start your morning early at the Louvre Museum — home to the legendary Mona Lisa and thousands of masterpieces. Stroll through the Tuileries Garden before heading to Notre-Dame Cathedral.",
+            "Post-lunch, climb the Arc de Triomphe for a panoramic view of the city skyline and the historic avenues below."
+          ],
+          "list": [
+            "Visit the Louvre (book tickets online to skip queues).",
+            "Lunch at Angelina Paris — famous for its hot chocolate.",
+            "Sunset view from Arc de Triomphe’s terrace."
+          ],
+          "quote": "Paris is not just a city you visit. It’s a story you become part of — one street, one café, one glance at a time."
+        },
+        {
+          "heading": "Day 3: Art, Culture, and Montmartre",
+          "paragraphs": [
+            "Paris is synonymous with art, and nowhere is this more visible than at the Musée d’Orsay and Montmartre. The Orsay boasts an unparalleled collection of Impressionist art by Monet, Degas, and Van Gogh.",
+            "In the afternoon, head up to Montmartre to explore Sacré-Cœur Basilica and the artistic square, Place du Tertre."
+          ],
+          "image": {
+            "src": "/assets/img/home1/destination-img2.jpg",
+            "caption": "Inside the Louvre — where art and history live in eternal harmony."
+          }
+        },
+        {
+          "heading": "Day 4–5: Day Trips and Hidden Gems",
+          "paragraphs": [
+            "Dedicate these days to exploring beyond central Paris. Visit Versailles Palace to witness royal grandeur — the Hall of Mirrors and the royal gardens are pure opulence.",
+            "Alternatively, take a wine tour in the Champagne region for a taste of France’s finest vineyards."
+          ],
+          "list": [
+            "Half-day trip to Versailles via RER C train.",
+            "Lunch at Café de Flore, a favorite of Hemingway and Picasso.",
+            "Evening stroll through Saint-Germain-des-Prés."
+          ]
+        },
+        {
+          "heading": "Suggested Itinerary Overview",
+          "table": [
+            ["Day 1", "Arrival, Evening at the Seine", "7th Arrondissement"],
+            ["Day 2", "Louvre, Arc de Triomphe", "Central Paris"],
+            ["Day 3", "Montmartre, Musée d’Orsay", "Montmartre"],
+            ["Day 4–5", "Versailles, Champagne Tour", "Outskirts"]
+          ]
+        },
+        {
+          "heading": "Day 6–7: Shopping, Markets, and Farewell",
+          "paragraphs": [
+            "Paris is a fashion capital, and no trip is complete without a shopping spree. Begin at Galeries Lafayette and move to Le Marais for boutique stores. Don’t forget the flea markets at Saint-Ouen — a paradise for vintage lovers.",
+            "Before you leave, take a short walk across Pont Alexandre III — often considered the most beautiful bridge in the city — for one last perfect view of the Eiffel Tower.",
+            "Every traveler who visits Paris leaves with a unique story. From morning croissants to midnight walks along the Seine, Paris offers timeless moments that linger long after you’ve returned home."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the best time to visit Paris?",
+          "answer": "Spring (March–May) and autumn (September–November) are ideal for pleasant weather and fewer crowds."
+        },
+        {
+          "question": "Is Paris expensive for travelers?",
+          "answer": "Paris can be moderately expensive, but affordable dining, metro passes, and local cafés help manage costs."
+        },
+        {
+          "question": "Do I need a visa to visit France?",
+          "answer": "Travelers from non-EU countries may need a Schengen visa. Check official French consulate websites before travel."
+        }
+      ]
+    }
+  }
+  
+]

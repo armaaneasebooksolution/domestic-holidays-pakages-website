@@ -1,3 +1,4 @@
+import BlogDetails from "@/components/Blogs/BlogDetails";
 import BlogList from "@/components/Blogs/BlogList";
 import DynamicBanner from "@/components/Common/DynamicBanner";
 import Footer from "@/components/Common/Footer";
@@ -17,6 +18,7 @@ const TravelInspiration = () => {
       />
       <BlogList />
       <Footer />
+      {/* <BlogDetails /> */}
     </>
   );
 };
